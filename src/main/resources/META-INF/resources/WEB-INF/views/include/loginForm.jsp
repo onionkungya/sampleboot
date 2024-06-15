@@ -1,23 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<script src="webjars/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript">
 
-	$(document).ready(function(){
-		
-		//회원가입 서브밋
-		$("form").on("submit", function(){
-			alert("login submit");
-			this.action="login";
-			this.method="post";
-			
-		});
-
-	});//ready()
-
-</script>
 <div class="container">
-    <form action="auth" method="post" class="row g-3 m-4">
+    <form  action="auth"  method="post"  class="row g-3 m-4">
 		  <div class="row mb-3">
 		    <label for="userid" class="col-sm-2 col-form-label">아이디</label>
 		    <div class="col-auto">
@@ -36,3 +21,4 @@
 		  </div>
  </form>
 </div> 
+
